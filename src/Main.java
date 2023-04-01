@@ -70,6 +70,27 @@ public class Main {
         int choice1 = scnr.nextInt();
 
         switch (choice1) {
+            case 1:
+                System.out.println("-----------------------------------");
+                System.out.println("Which Breed do you want to adopt");
+                ArrayList<Dog> inventory1 = petStore.getAvailableDogs();
+                if (!inventory1.isEmpty()) {
+                    int itemNum = 1;
+
+
+
+                    for (Dog pet : inventory1) {
+                        System.out.println(
+                                "\t" + itemNum + pet.getBreed() + "(" + pet.getName() +
+                                        ")"
+                        );
+                        itemNum++;
+                    }
+                    // get user selection for pet to adopt
+                    int choice = scnr.nextInt();
+
+                }
+                break;
             case 2:
                 System.out.println("-----------------------------------");
                 System.out.println("Which Breed do you want to adopt");
