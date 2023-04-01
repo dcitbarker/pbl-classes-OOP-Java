@@ -15,6 +15,7 @@ public class Main {
     public static void main(String[] args) {
 
 
+
         Scanner scnr = new Scanner(System. in);
         PetStore ps = new PetStore("Insert Petstore name here"); // Give your store a name!
         System.out.println("**** Welcome to " + ps.getStoreName() + "****");
@@ -43,6 +44,7 @@ public class Main {
                     registerNewMember(ps, scnr);
                     break;
                 case 3:
+                    adoptPet(ps);
                     break;
                 case 4:
                     break;
@@ -56,6 +58,67 @@ public class Main {
             }
         }
     }
+
+    private static void adoptPet(PetStore petStore){
+        System.out.println("Please which animal do you want to adopt");
+        System.out.println("\t1. Dog");
+        System.out.println("\t2. Cat");
+        System.out.println("\t3. Exotic Pet");
+        System.out.println("\t4. Exit");
+
+        Scanner scnr = new Scanner(System.in);
+        int choice1 = scnr.nextInt();
+
+        switch (choice1) {
+            case 2:
+                System.out.println("-----------------------------------");
+                System.out.println("Which Breed do you want to adopt");
+                ArrayList<Cat> inventory2 = petStore.getAvailableCats();
+                if (!inventory2.isEmpty()) {
+                    int itemNum = 1;
+
+
+
+                    for (Cat pet : inventory2) {
+                        System.out.println(
+                                "\t" + itemNum + pet.getBreed() + "(" + pet.getName() +
+                                        ")"
+                        );
+                        itemNum++;
+                    }
+                    // get user selection for pet to adopt
+                    int choice = scnr.nextInt();
+
+                }
+                    break;
+            case 3:
+                System.out.println("-----------------------------------");
+                System.out.println("Which species do you want to adopt");
+                ArrayList<ExoticPet> inventory3 = petStore.getAvailableExoticPets();
+                if (!inventory3.isEmpty()) {
+                    int itemNum = 1;
+
+
+
+                    for (ExoticPet pet : inventory3) {
+                        System.out.println(
+                                "\t" + itemNum + pet.getBreed() + "(" + pet.getName() +
+                                        ")"
+                        );
+                        itemNum++;
+                    }
+                    // get user selection for pet to adopt
+                    int choice = scnr.nextInt();
+
+                }
+                break;
+                    default:
+                        System.out.println("Invalid choice, try again.");
+                }
+
+    }
+
+
 
 
     private static void purchase(PetStore petStore, Scanner scnr, ArrayList<Dog> cart) {
