@@ -7,7 +7,6 @@ abstract class Pet implements Comparable<Pet> {
     private int ID;
     private double price;
 
-
     public Pet(String name, String breed, String sex, int age, double weight, int ID, double price) {
         this.name = name;
         this.breed = breed;
@@ -20,7 +19,6 @@ abstract class Pet implements Comparable<Pet> {
 
     @Override
     public abstract int compareTo(Pet other) ;
-
 
     public String getName() {
         return name;
