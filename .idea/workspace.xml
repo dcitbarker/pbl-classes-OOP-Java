@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d47ee50-93fe-4890-ab45-7a37939f5f29" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PetStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PetStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExoticPet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PetStore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PremiumMember.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,5 +70,16 @@
       <updated>1678021987323</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
